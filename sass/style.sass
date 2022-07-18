@@ -124,10 +124,11 @@ nav
     color: #FFFFFF
     text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21)
 
-.reasons
+.reason
     padding: 71px 0px 65px 0px
 
 .label
+    position: relative
     margin: 0 auto
     width: 112px
     height: 24px
@@ -138,48 +139,60 @@ nav
     text-transform: uppercase
     color: #FFFFFF
     text-align: center
+    z-index: 2
+    &_white
+        background-color: #fff
+        color: #000
 
 .title
+    position: relative
     margin-top: 38px
     font-weight: 700
     font-size: 38px
     text-align: center
     text-transform: uppercase
     color: #222222
+    z-index: 2
+    &_white
+        color: #fff
 
 .subtitle
+    position: relative
     margin-top: 19px
     font-weight: 400
     font-size: 17px
-    color: #222222
     text-align: center
+    color: #222222
+    z-index: 2
+    &_white
+        color: #fff
 
-.reasons .reasons_block
+.reason .reason_block
     display: flex
     justify-content: center
     align-items: center
     margin-top: 35px
 
-.reasons_round
+.reason_round
     display: flex
     justify-content: center
     align-items: center
     margin-right: 26px
+    background: #1eacc7
     width: 113px
     height: 113px
-    background-color: #1eacc7
     border-radius: 100%
 
-.reasons_descr
+.reason_descr
     width: 343px
 
-    .reasons_subtitle
+    .reason_subheader
         line-height: 21px
         color: #1eacc7
         font-size: 17px
         font-weight: 400
 
-    .reasons_text
+    .reason_text
         color: #202020
         font-size: 15px
         font-weight: 300
@@ -227,7 +240,33 @@ nav
             transform: translateX(-50%)
             width: 26px
             height: 26px
-            background: #000000
+            background: #000
             margin: 0 auto
             border-radius: 100%
             cursor: pointer
+
+.choice
+    position: relative
+    min-height: 895px
+    padding: 59px 0 138px 0
+    background: url('../img/bg/mobile_app.png') center (center / cover) no-repeat
+    &_img
+        position: relative
+        display: block
+        margin: 56px auto 0 auto
+        z-index: 2
+    &_descr
+        font-weight: 300
+        font-size: 17px
+        line-height: 24px
+        text-align: center
+        color: #222222
+
+    .black
+        position: absolute
+        top: 0
+        left: 0
+        height: 499px
+        width: 100%
+        background-color: #070716
+        z-index: 1
